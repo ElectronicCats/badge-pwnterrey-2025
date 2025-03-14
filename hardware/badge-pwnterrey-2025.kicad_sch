@@ -4,6 +4,13 @@
 	(generator_version "9.0")
 	(uuid "85de002e-ba9e-4d97-83b6-4373a73752cf")
 	(paper "A5")
+	(title_block
+		(title "PWNterrey")
+		(date "2025-03-14")
+		(rev "v1.0")
+		(company "ElectronicCats")
+		(comment 1 "Adonai Diaz")
+	)
 	(lib_symbols
 		(symbol "+3.3V_1"
 			(power)
@@ -2419,7 +2426,7 @@
 	)
 	(polyline
 		(pts
-			(xy 13.97 106.045) (xy 92.075 106.045)
+			(xy 10.795 106.68) (xy 88.9 106.68)
 		)
 		(stroke
 			(width 0)
