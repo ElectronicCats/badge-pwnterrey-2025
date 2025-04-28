@@ -38,93 +38,151 @@ uint8_t delay = 200, delay2 = 250, delay4 = 50;
 
 
 // Sequence 1
-void eyesSequence()
+void hatSequence()
 {
   HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_5);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7);
   HAL_Delay(delay1);
   HAL_GPIO_OffPin(GPIOA, GPIO_PIN_1);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_5);
-  HAL_Delay(delay);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
+  HAL_Delay(delay1);
 
   //Bink
   HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_5);
-  HAL_Delay(delay);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7);
+  HAL_Delay(delay2);
   HAL_GPIO_OffPin(GPIOA, GPIO_PIN_1);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_5);
-  HAL_Delay(delay);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
+  HAL_Delay(delay2);
   HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_5);
-  HAL_Delay(delay);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7);
+  HAL_Delay(delay2);
   HAL_GPIO_OffPin(GPIOA, GPIO_PIN_1);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_5);
-  HAL_Delay(delay);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
+  HAL_Delay(delay2);
   HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_5);
-  HAL_Delay(delay);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7);
+  HAL_Delay(delay2);
   HAL_GPIO_OffPin(GPIOA, GPIO_PIN_1);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_5);
-  HAL_Delay(delay);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
+  HAL_Delay(delay2);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7);
+  HAL_Delay(delay2);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_1);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
+  HAL_Delay(delay2);
 }
 
 // Sequence 2
 void wingSequence()
 {
   HAL_GPIO_OnPin(GPIOF, GPIO_PIN_0); 
-  HAL_Delay(delay2);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_5);
   HAL_Delay(delay1);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
-  HAL_Delay(delay);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6);
-  HAL_Delay(delay);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
-  HAL_Delay(delay);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6);
-  HAL_Delay(delay);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
-  HAL_Delay(delay);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6);
-  HAL_Delay(delay);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_5);
   HAL_GPIO_OffPin(GPIOF, GPIO_PIN_0);
-  HAL_Delay(delay);
-}
+  HAL_Delay(delay1);
 
-
-// Sequence 3
-void rouletteSequence()
-{
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1);
-  HAL_Delay(delay2);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_5); 
-  HAL_Delay(delay2);
+  
   HAL_GPIO_OnPin(GPIOF, GPIO_PIN_0); 
-  HAL_Delay(delay2);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7); 
-  HAL_Delay(delay2);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6); 
-  HAL_Delay(delay2);
-
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
-  HAL_Delay(delay2);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
-  HAL_Delay(delay2);
-  HAL_GPIO_OffPin(GPIOF, GPIO_PIN_0);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_5);
   HAL_Delay(delay2);
   HAL_GPIO_OffPin(GPIOA, GPIO_PIN_5);
+  HAL_GPIO_OffPin(GPIOF, GPIO_PIN_0);
   HAL_Delay(delay2);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_1);
+  HAL_GPIO_OnPin(GPIOF, GPIO_PIN_0); 
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_5);
   HAL_Delay(delay2);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_5);
+  HAL_GPIO_OffPin(GPIOF, GPIO_PIN_0);
+  HAL_Delay(delay2);
+  HAL_GPIO_OnPin(GPIOF, GPIO_PIN_0); 
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_5);
+  HAL_Delay(delay2);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_5);
+  HAL_GPIO_OffPin(GPIOF, GPIO_PIN_0);
+  HAL_Delay(delay2);
+  HAL_GPIO_OnPin(GPIOF, GPIO_PIN_0); 
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_5);
+  HAL_Delay(delay2);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_5);
+  HAL_GPIO_OffPin(GPIOF, GPIO_PIN_0);
+  HAL_Delay(delay2);
+}
+
+// Sequence 3
+void crazyhatSequence()
+{
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1);
+  HAL_Delay(delay);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_1); 
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6);
+  HAL_Delay(delay);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7); 
+  HAL_Delay(delay);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
+
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1);
+  HAL_Delay(delay);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_1); 
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6);
+  HAL_Delay(delay);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7); 
+  HAL_Delay(delay);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7); 
+
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1);
+  HAL_Delay(delay);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_1); 
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6);
+  HAL_Delay(delay);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7); 
+  HAL_Delay(delay);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7); 
+
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1);
+  HAL_Delay(delay);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_1); 
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6);
+  HAL_Delay(delay);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7); 
+  HAL_Delay(delay);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7); 
+
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1);
+  HAL_Delay(delay);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_1); 
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6);
+  HAL_Delay(delay);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7); 
+  HAL_Delay(delay);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7); 
+
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1);
+  HAL_Delay(delay);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_1); 
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6);
+  HAL_Delay(delay);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7); 
+  HAL_Delay(delay);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7); 
 }
 
 // Sequence 4
@@ -135,96 +193,79 @@ void allSequence()
   HAL_GPIO_OnPin(GPIOF, GPIO_PIN_0);
   HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7); 
   HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6); 
-  HAL_Delay(delay3);
+  HAL_Delay(delay1);
   HAL_GPIO_OffPin(GPIOA, GPIO_PIN_1); 
   HAL_GPIO_OffPin(GPIOA, GPIO_PIN_5); 
   HAL_GPIO_OffPin(GPIOF, GPIO_PIN_0);
   HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7); 
   HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6); 
-  HAL_Delay(delay);
-
-  //Blink
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1); 
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_5); 
-  HAL_GPIO_OnPin(GPIOF, GPIO_PIN_0);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7); 
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6); 
-  HAL_Delay(delay);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_1); 
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_5); 
-  HAL_GPIO_OffPin(GPIOF, GPIO_PIN_0);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7); 
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6); 
-  HAL_Delay(delay);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1); 
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_5); 
-  HAL_GPIO_OnPin(GPIOF, GPIO_PIN_0);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7); 
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6); 
-  HAL_Delay(delay);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_1); 
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_5); 
-  HAL_GPIO_OffPin(GPIOF, GPIO_PIN_0);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7); 
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6); 
-  HAL_Delay(delay);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1); 
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_5); 
-  HAL_GPIO_OnPin(GPIOF, GPIO_PIN_0);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7); 
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6); 
-  HAL_Delay(delay);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_1); 
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_5); 
-  HAL_GPIO_OffPin(GPIOF, GPIO_PIN_0);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7); 
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6); 
-  HAL_Delay(delay);
+  HAL_Delay(delay1);
 }
 
 // Seqeuence 5
 void slowrouletteSequence()
 {
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1); 
-  HAL_Delay(delay2);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_1); 
-  HAL_Delay(delay2);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_5); 
-  HAL_Delay(delay2);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_5); 
-  HAL_Delay(delay2);
-  HAL_GPIO_OnPin(GPIOF, GPIO_PIN_0);
-  HAL_Delay(delay2);
-  HAL_GPIO_OffPin(GPIOF, GPIO_PIN_0);
-  HAL_Delay(delay2);
   HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7); 
-  HAL_Delay(delay2);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7); 
   HAL_Delay(delay2);
   HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6); 
   HAL_Delay(delay2);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1); 
+  HAL_Delay(delay2);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_5); 
+  HAL_Delay(delay2);
+  HAL_GPIO_OnPin(GPIOF, GPIO_PIN_0);
+  HAL_Delay(delay2);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
+  HAL_Delay(delay2);
   HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6); 
+  HAL_Delay(delay2);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_1); 
+  HAL_Delay(delay2);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_5); 
+  HAL_Delay(delay2);
+  HAL_GPIO_OffPin(GPIOF, GPIO_PIN_0); 
   HAL_Delay(delay2);
 
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6); 
-  HAL_Delay(delay2);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6); 
-  HAL_Delay(delay2);
   HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7); 
   HAL_Delay(delay2);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7); 
-  HAL_Delay(delay2);
-  HAL_GPIO_OnPin(GPIOF, GPIO_PIN_0);
-  HAL_Delay(delay2);
-  HAL_GPIO_OffPin(GPIOF, GPIO_PIN_0);
-  HAL_Delay(delay2);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_5); 
-  HAL_Delay(delay2);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_5); 
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6); 
   HAL_Delay(delay2);
   HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1); 
   HAL_Delay(delay2);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_5); 
+  HAL_Delay(delay2);
+  HAL_GPIO_OnPin(GPIOF, GPIO_PIN_0);
+  HAL_Delay(delay2);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
+  HAL_Delay(delay2);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6); 
+  HAL_Delay(delay2);
   HAL_GPIO_OffPin(GPIOA, GPIO_PIN_1); 
+  HAL_Delay(delay2);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_5); 
+  HAL_Delay(delay2);
+  HAL_GPIO_OffPin(GPIOF, GPIO_PIN_0); 
+  HAL_Delay(delay2);
+
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7); 
+  HAL_Delay(delay2);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6); 
+  HAL_Delay(delay2);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1); 
+  HAL_Delay(delay2);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_5); 
+  HAL_Delay(delay2);
+  HAL_GPIO_OnPin(GPIOF, GPIO_PIN_0);
+  HAL_Delay(delay2);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
+  HAL_Delay(delay2);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6); 
+  HAL_Delay(delay2);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_1); 
+  HAL_Delay(delay2);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_5); 
+  HAL_Delay(delay2);
+  HAL_GPIO_OffPin(GPIOF, GPIO_PIN_0); 
   HAL_Delay(delay2);
 }
 
@@ -236,75 +277,66 @@ void allblinkSequence()
   HAL_GPIO_OnPin(GPIOF, GPIO_PIN_0);
   HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7); 
   HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6); 
-  HAL_Delay(delay3);
-  
-  //eyes
+  HAL_Delay(delay1);
   HAL_GPIO_OffPin(GPIOA, GPIO_PIN_1); 
   HAL_GPIO_OffPin(GPIOA, GPIO_PIN_5);
-  HAL_Delay(delay);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
+  HAL_GPIO_OffPin(GPIOF, GPIO_PIN_0);
+  HAL_Delay(delay1);
+
   HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1); 
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_5);
-  HAL_Delay(delay);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_5); 
+  HAL_GPIO_OnPin(GPIOF, GPIO_PIN_0);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7); 
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6); 
+  HAL_Delay(delay1);
   HAL_GPIO_OffPin(GPIOA, GPIO_PIN_1); 
   HAL_GPIO_OffPin(GPIOA, GPIO_PIN_5);
-  HAL_Delay(delay);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
+  HAL_GPIO_OffPin(GPIOF, GPIO_PIN_0);
+  HAL_Delay(delay1);
+
   HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1); 
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_5);
-  HAL_Delay(delay);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_5); 
+  HAL_GPIO_OnPin(GPIOF, GPIO_PIN_0);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7); 
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6); 
+  HAL_Delay(delay1);
   HAL_GPIO_OffPin(GPIOA, GPIO_PIN_1); 
   HAL_GPIO_OffPin(GPIOA, GPIO_PIN_5);
-  HAL_Delay(delay);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
+  HAL_GPIO_OffPin(GPIOF, GPIO_PIN_0);
+  HAL_Delay(delay1);
+
   HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1); 
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_5);
-  HAL_Delay(delay);
-
-  //wing
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7); 
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
-  HAL_Delay(delay);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7); 
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6);
-  HAL_Delay(delay);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7); 
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
-  HAL_Delay(delay);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7); 
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6);
-  HAL_Delay(delay);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7); 
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
-  HAL_Delay(delay);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7); 
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6);
-  HAL_Delay(delay);
-
-  //head
-  HAL_GPIO_OffPin(GPIOF, GPIO_PIN_0);
-  HAL_Delay(delay);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_5); 
   HAL_GPIO_OnPin(GPIOF, GPIO_PIN_0);
-  HAL_Delay(delay);
-  HAL_GPIO_OffPin(GPIOF, GPIO_PIN_0);
-  HAL_Delay(delay);
-  HAL_GPIO_OnPin(GPIOF, GPIO_PIN_0);
-  HAL_Delay(delay);
-  HAL_GPIO_OffPin(GPIOF, GPIO_PIN_0);
-  HAL_Delay(delay);
-  HAL_GPIO_OnPin(GPIOF, GPIO_PIN_0);
-  HAL_Delay(delay3);
-
-  //off
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7); 
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6); 
+  HAL_Delay(delay1);
   HAL_GPIO_OffPin(GPIOA, GPIO_PIN_1); 
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_5); 
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_5);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
   HAL_GPIO_OffPin(GPIOF, GPIO_PIN_0);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7); 
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6); 
-  HAL_Delay(delay);
+  HAL_Delay(delay1);
 }
 
 // Sequence 7
 void fastrouletteSequence()
 {
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7);
+  HAL_Delay(delay4);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
+  HAL_Delay(delay4);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6); 
+  HAL_Delay(delay4);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
+  HAL_Delay(delay4);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1); 
   HAL_Delay(delay4);
   HAL_GPIO_OffPin(GPIOA, GPIO_PIN_1);
   HAL_Delay(delay4);
@@ -315,17 +347,17 @@ void fastrouletteSequence()
   HAL_GPIO_OnPin(GPIOF, GPIO_PIN_0); 
   HAL_Delay(delay4);
   HAL_GPIO_OffPin(GPIOF, GPIO_PIN_0);
-  HAL_Delay(delay4);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7); 
-  HAL_Delay(delay4);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
-  HAL_Delay(delay4);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6); 
-  HAL_Delay(delay4);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
   HAL_Delay(delay4);
 
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7);
+  HAL_Delay(delay4);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
+  HAL_Delay(delay4);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6); 
+  HAL_Delay(delay4);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
+  HAL_Delay(delay4);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1); 
   HAL_Delay(delay4);
   HAL_GPIO_OffPin(GPIOA, GPIO_PIN_1);
   HAL_Delay(delay4);
@@ -336,17 +368,17 @@ void fastrouletteSequence()
   HAL_GPIO_OnPin(GPIOF, GPIO_PIN_0); 
   HAL_Delay(delay4);
   HAL_GPIO_OffPin(GPIOF, GPIO_PIN_0);
-  HAL_Delay(delay4);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7); 
-  HAL_Delay(delay4);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
-  HAL_Delay(delay4);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6); 
-  HAL_Delay(delay4);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
   HAL_Delay(delay4);
 
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7);
+  HAL_Delay(delay4);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
+  HAL_Delay(delay4);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6); 
+  HAL_Delay(delay4);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
+  HAL_Delay(delay4);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1); 
   HAL_Delay(delay4);
   HAL_GPIO_OffPin(GPIOA, GPIO_PIN_1);
   HAL_Delay(delay4);
@@ -357,17 +389,17 @@ void fastrouletteSequence()
   HAL_GPIO_OnPin(GPIOF, GPIO_PIN_0); 
   HAL_Delay(delay4);
   HAL_GPIO_OffPin(GPIOF, GPIO_PIN_0);
-  HAL_Delay(delay4);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7); 
-  HAL_Delay(delay4);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
-  HAL_Delay(delay4);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6); 
-  HAL_Delay(delay4);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
   HAL_Delay(delay4);
 
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7);
+  HAL_Delay(delay4);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
+  HAL_Delay(delay4);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6); 
+  HAL_Delay(delay4);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
+  HAL_Delay(delay4);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1); 
   HAL_Delay(delay4);
   HAL_GPIO_OffPin(GPIOA, GPIO_PIN_1);
   HAL_Delay(delay4);
@@ -378,17 +410,17 @@ void fastrouletteSequence()
   HAL_GPIO_OnPin(GPIOF, GPIO_PIN_0); 
   HAL_Delay(delay4);
   HAL_GPIO_OffPin(GPIOF, GPIO_PIN_0);
-  HAL_Delay(delay4);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7); 
-  HAL_Delay(delay4);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
-  HAL_Delay(delay4);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6); 
-  HAL_Delay(delay4);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
   HAL_Delay(delay4);
 
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7);
+  HAL_Delay(delay4);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
+  HAL_Delay(delay4);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6); 
+  HAL_Delay(delay4);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
+  HAL_Delay(delay4);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1); 
   HAL_Delay(delay4);
   HAL_GPIO_OffPin(GPIOA, GPIO_PIN_1);
   HAL_Delay(delay4);
@@ -399,17 +431,17 @@ void fastrouletteSequence()
   HAL_GPIO_OnPin(GPIOF, GPIO_PIN_0); 
   HAL_Delay(delay4);
   HAL_GPIO_OffPin(GPIOF, GPIO_PIN_0);
-  HAL_Delay(delay4);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7); 
-  HAL_Delay(delay4);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
-  HAL_Delay(delay4);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6); 
-  HAL_Delay(delay4);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
   HAL_Delay(delay4);
 
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7);
+  HAL_Delay(delay4);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
+  HAL_Delay(delay4);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6); 
+  HAL_Delay(delay4);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
+  HAL_Delay(delay4);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1); 
   HAL_Delay(delay4);
   HAL_GPIO_OffPin(GPIOA, GPIO_PIN_1);
   HAL_Delay(delay4);
@@ -420,17 +452,17 @@ void fastrouletteSequence()
   HAL_GPIO_OnPin(GPIOF, GPIO_PIN_0); 
   HAL_Delay(delay4);
   HAL_GPIO_OffPin(GPIOF, GPIO_PIN_0);
-  HAL_Delay(delay4);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7); 
-  HAL_Delay(delay4);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
-  HAL_Delay(delay4);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6); 
-  HAL_Delay(delay4);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
   HAL_Delay(delay4);
 
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7);
+  HAL_Delay(delay4);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
+  HAL_Delay(delay4);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6); 
+  HAL_Delay(delay4);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
+  HAL_Delay(delay4);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1); 
   HAL_Delay(delay4);
   HAL_GPIO_OffPin(GPIOA, GPIO_PIN_1);
   HAL_Delay(delay4);
@@ -441,17 +473,17 @@ void fastrouletteSequence()
   HAL_GPIO_OnPin(GPIOF, GPIO_PIN_0); 
   HAL_Delay(delay4);
   HAL_GPIO_OffPin(GPIOF, GPIO_PIN_0);
-  HAL_Delay(delay4);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7); 
-  HAL_Delay(delay4);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
-  HAL_Delay(delay4);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6); 
-  HAL_Delay(delay4);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
   HAL_Delay(delay4);
 
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7);
+  HAL_Delay(delay4);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
+  HAL_Delay(delay4);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6); 
+  HAL_Delay(delay4);
+  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
+  HAL_Delay(delay4);
+  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_1); 
   HAL_Delay(delay4);
   HAL_GPIO_OffPin(GPIOA, GPIO_PIN_1);
   HAL_Delay(delay4);
@@ -462,14 +494,6 @@ void fastrouletteSequence()
   HAL_GPIO_OnPin(GPIOF, GPIO_PIN_0); 
   HAL_Delay(delay4);
   HAL_GPIO_OffPin(GPIOF, GPIO_PIN_0);
-  HAL_Delay(delay4);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_7); 
-  HAL_Delay(delay4);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_7);
-  HAL_Delay(delay4);
-  HAL_GPIO_OnPin(GPIOA, GPIO_PIN_6); 
-  HAL_Delay(delay4);
-  HAL_GPIO_OffPin(GPIOA, GPIO_PIN_6);
   HAL_Delay(delay4);
 }
 
@@ -478,13 +502,13 @@ void sequences(int sequence)
   switch (sequence)
   {
   case 1:
-    eyesSequence();
+    hatSequence();
     break;
   case 2:
     wingSequence();
     break;
   case 3:
-    rouletteSequence();
+    crazyhatSequence();
     break;
   case 4:
     allSequence();
