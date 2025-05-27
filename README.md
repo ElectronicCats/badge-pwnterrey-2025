@@ -8,7 +8,7 @@ Los patitos llegaron es el badge electronico de [PWNTERREY]([https://hackgdl.net
 - 4 LEDs SMD
 
 # Firmware
-- Para hacer cambios en el firmware revisar nuestros [PUYA Projects]([https://github.com/ElectronicCats/Badge-HackGDL2024/tree/main/firmware#readme](https://github.com/ElectronicCats/puya-projects))
+- Para hacer cambios en el firmware revisar nuestros [PUYA Projects](https://github.com/ElectronicCats/puya-projects)
 
 ## License
 <a>
